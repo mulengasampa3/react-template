@@ -1,0 +1,17 @@
+[
+    {
+        "title": "My Account",
+        "icon": " bi-wallet2",
+        "path": "/my-account"
+    },
+    {
+        "title": "Transactions",
+        "icon": "bi-arrow-left-right",
+        "path": "/transactions"
+    },
+    {
+        "title": "Settings",
+        "icon": "bi-person-fill-gear",
+        "path": "/userDashboard"
+    }
+]

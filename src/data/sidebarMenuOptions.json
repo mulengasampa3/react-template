@@ -1,0 +1,120 @@
+[
+    {
+        "title": "Dashboard",
+        "icon": "bi-house-fill",
+        "path": "/"
+    },
+    {
+        "title": "Loan Applications",
+        "icon": "bi-pencil",
+        "path": "/loanApplications"
+    },
+
+    {
+        "title": "Back Office",
+        "icon": "bi-database-fill",
+        "children": [
+            {
+                "title": "Due Diligence",
+                "icon": "bi-caret-right-fill",
+                "path": "/dueDiligence"
+            },
+            {
+                "title": "Loan Log",
+                "icon": "bi-caret-right-fill",
+                "path": "/loanLog"
+            },
+            {
+                "title": "PMEC Submissions",
+                "icon": "bi-caret-right-fill",
+                "path": "/pmecSubmissions"
+            },
+            {
+                "title": "PMEC Submissions List",
+                "icon": "bi-caret-right-fill",
+                "path": "/pmecSubmissionsList"
+            },
+            {
+                "title": "Ledger",
+                "icon": "bi-caret-right-fill",
+                "path": "/ledger"
+            },
+            {
+                "title": "GRZ Instructions",
+                "icon": "bi-caret-right-fill",
+                "path": "/grzInstructions"
+            }
+        ]
+    },
+    {
+        "title": "Loans",
+        "icon": "bi-currency-exchange",
+        "children": [
+            {
+                "title": "Active Loans",
+                "icon": "bi-caret-right-fill",
+                "path": "/activeLoans"
+            },
+            {
+                "title": "Closed Loans",
+                "icon": "bi-caret-right-fill",
+                "path": "/closedLoans"
+            }
+        ]
+    },
+    {
+        "title": "Disbursements",
+        "icon": "bi-person-fill",
+        "children": [
+            {
+                "title": "Bank Instructions",
+                "icon": "bi-caret-right-fill",
+                "path": "/bankInstructions"
+            },
+            {
+                "title": "Momo Instructions",
+                "icon": "bi-caret-right-fill",
+                "path": "/momoInstructions"
+            }
+        ]
+    },
+    {
+        "title": "Payment Form",
+        "icon": "bi-cash-coin",
+        "path": "/paymentForm"
+    },
+    {
+        "title": "Loan Calculator",
+        "icon": " bi-calculator-fill",
+        "path": "/loanCalculator"
+    },
+    {
+        "title": "Super Admin",
+        "icon": " bi-shield-lock",
+        "children": [
+            {
+                "title": "user Management",
+                "icon": "bi-person-fill-gear",
+                "children": [
+                    {
+                        "title": "Session Management",
+                        "icon": "bi-caret-right-fill",
+                        "path": "/sessionManagement"
+                    }
+                    ,
+                    {
+                        "title": "Role Management",
+                        "icon": "bi-caret-right-fill",
+                        "path": "/roleManagement"
+                    }
+                ]
+            },
+            {
+                "title": "Department Management",
+                "icon": "bi-caret-right-fill",
+                "path": "/dapartmentManagement"
+            }
+        ]
+    }
+]
+

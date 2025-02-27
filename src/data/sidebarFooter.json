@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Account Settings",
+        "icon": "bi-gear-fill",
+        "path": "/accountSettings"
+    },
+    {
+        "title": "Log Out",
+        "icon": "bi-box-arrow-right",
+        "path": "/login"
+    }
+]
