@@ -51,11 +51,11 @@ const DropdownIcon: React.FC<DropdownIconProps> = ({ iconClass, dropdownItems, t
     return (
         <div className="DropdownComponent relative">
             <div
-                className="notification-icon mx-[5px] w-[40px] h-[40px] bg-transparent border rounded-xl hover:rounded-[50%] transition-all cursor-pointer relative"
+                className="notification-icon mx-[5px] w-[40px] h-[40px] bg-[#f9f9f9] border rounded-xl hover:rounded-[50%] transition-all cursor-pointer relative"
                 onClick={toggleDropdown}
                 ref={iconRef}
             >
-                <i className={`${iconClass} w-full h-full text-white flex items-center justify-center text-[27px] font-[500] absolute`}></i>
+                <i className={`${iconClass} w-full h-full text-dc flex items-center justify-center text-[27px] font-[500] absolute`}></i>
                 {dropdownItems.length > 0 && (
                     <span className="bubble absolute w-[20px] h-[20px] rounded-[30%] text-[12px] font-bold flex items-center justify-center text-white bg-[red] right-[-5px] top-[-5px]">
                         {dropdownItems.length}
@@ -112,28 +112,28 @@ const Navbar: React.FC<NavbarProps> = ({ setSidebarOpen, sidebarOpen }) => {
         { title: "Jane Smith", description: "Meeting today?", time: "5 min ago" },
     ];
 
-    const extras: DropdownItem[] = [
-        { title: "Item 1", description: "Description 1" },
-        { title: "Item 2", description: "Description 2" },
-        { title: "Item 3", description: "Description 3" },
-        { title: "Item 4", description: "Description 4" },
-        { title: "Item 5", description: "Description 5" },
-        { title: "Item 6", description: "Description 6" },
-        // ... more extras items
-    ];
-
     return (
-        <div className="w-[100%] h-[55px] bg-auth-form-color flex justify-between items-center pl-2 pr-5">
+        <div className="w-[100%] h-[55px]  flex justify-between items-center pl-2 border pr-2">
             <div
                 onClick={() => setSidebarOpen(!sidebarOpen)}
-                className="minimize-btn mx-[5px] w-[45px] h-[45px] bg-frontier-light-blue rounded-xl hover:rounded-[50%] transition-all"
+                className="minimize-btn mx-[5px] w-[40px] h-[40px] bg-system-white bg-frontier-light-blue rounded-xl hover:rounded-[50%] transition-all"
             >
-                <i className="bx bx-menu w-full h-full text-white flex items-center justify-center text-[30px] font-[500] cursor-pointer"></i>
+                <i className="bx bx-menu w-full h-full text-dc text-[27px] flex items-center justify-center font-[500] cursor-pointer"></i>
             </div>
             <div className="right-navbar w-auto h-full flex items-center">
                 <DropdownIcon iconClass="bx bxs-bell-ring" dropdownItems={notifications} type="notification" />
                 <DropdownIcon iconClass="bx bxs-chat" dropdownItems={chats} type="chat" />
-                <DropdownIcon iconClass="bx bx-grid-alt" dropdownItems={extras} type="extras" grid={true} /> 
+                <div className="user-profile flex items-center mx-1 justify-center">
+                    <img
+                        src="https://randomuser.me/api/portraits/men/1.jpg"
+                        alt="User"
+                        className="w-[40px] h-[40px] rounded-xl hover:rounded-[50%] transition-all cursor-pointer"
+                    />
+                    <div className="user-name sm:flex hidden flex-col justify-center mx-1  px-1">
+                        <span className="user-name text-62 font-bold text-md leading-3">Thandiwe Lengalenga</span>
+                        <span className="role text-[12px] font-light text-62">Credit Officer</span>
+                    </div>
+                </div>
             </div>
         </div>
     );

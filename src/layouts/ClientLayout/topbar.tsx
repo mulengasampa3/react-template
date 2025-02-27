@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import CompanyLogo from '../../assets/images/icons/Logo-writing-black.png';
 import topBarMenuOptions from '../../data/topBarMenuOptions.json';
-import ConfirmationModal from '../../components/uiComponents/comfirmModal';
+import ConfirmationModal from '../../components/uiComponents/comfirmationModal';
 
 const Topbar: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);

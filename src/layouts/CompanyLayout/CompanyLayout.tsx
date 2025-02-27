@@ -9,7 +9,7 @@ const Layout: React.FC = () => {
     const [sidebarOpen, setSidebarOpen] = useState<boolean>(false); // Sidebar closed by default for mobile
 
     return (
-        <div className="layout flex h-screen w-screen relative bg-custom-gradient">
+        <div className="layout flex h-screen w-screen relative bg-dc">
             {/* Sidebar */}
             <Sidebar
                 sidebarOpen={sidebarOpen}

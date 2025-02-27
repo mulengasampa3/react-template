@@ -80,19 +80,18 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }: SidebarProps) {
 
     return (
         <aside 
-            className={`sidebar fixed duration-150 flex shadow-[0_0_20px_rgba(0,0,0,0.5)] flex-col text-white h-full lg:bg-auth-form-color bg-[#102020]
+            className={`sidebar fixed duration-150 flex shadow-[0_0_5px_rgba(0,0,0,0.5)] flex-col text-white h-full bg-sidebar-gradient
                      ${sidebarOpen ? 'lg:w-0' : 'lg:w-[290px]'} 
                     ${sidebarOpen ? 'w-[290px] z-50 lg:z-50' : 'w-0 z-50 lg:z-50'} `}>
             <div className="company-name flex pl-4 w-full h-[100px]">
                 <img src={companyName} alt="Company Logo" className="h-full w-[80%] object-contain" />
             </div>
-            <div className="menu-options flex-grow">
+            <div className="menu-options shadow-[0_-5px_5px_rgba(255,255,255,0.05)] flex-grow">
                 {MenuItemsData.map((item, index) => (
                     <SidebarItem key={index} item={item} setSidebarOpen={setSidebarOpen} />
                 ))}
             </div>
-            <hr />
-            <div className="sidebar-footer overflow-hidden">
+            <div className="sidebar-footer shadow-[0_-10px_10px_rgba(0,0,0,0.05)] overflow-hidden">
                 {SidebarFooterData.map((item, index) => (
                     <SidebarItem key={index} item={item} setSidebarOpen={setSidebarOpen} />
                 ))}

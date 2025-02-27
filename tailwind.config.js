@@ -6,14 +6,17 @@ module.exports = {
             colors: {
                 'company-color-primary': '#ee2526',
                 'company-color-secondary': '#166a37',
-                'auth-form-color': 'rgba(0, 0, 0, 0.487)'
+                'auth-form-color': 'rgba(0, 0, 0, 0.487)',
+                '62':'#626262',
+                'dc':'#dcdcdc',
+                'system-white': '#f9f9f9'
             },
             backgroundImage: {
-                'custom-gradient': 'linear-gradient(3deg, rgb(0, 0, 0) 0%, #166a37 0%, #ee2526 100%)',
-                'custom-gradient2': 'linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent)'
+                'custom-gradient': 'linear-gradient(180deg, rgba(56,108,179,1) 0%, rgba(34,74,121,1) 16%, rgba(23,217,215,1) 100%)',
+                'custom-gradient2': 'linear-gradient(45deg, rgba(255, 255, 255, 0.15) 0%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent)',
+                'sidebar-gradient': 'linear-gradient(180deg, rgba(56,108,179,1) 0%, rgba(34,74,121,1) 16%, rgba(23,217,215,1) 100%)',
             },
-
-            
+    
             backdropBlur: {
                 'custom': '40px',  // Adds a custom blur of 40px
             },
