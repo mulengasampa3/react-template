@@ -57,17 +57,17 @@ const DropdownIcon: React.FC<DropdownIconProps> = ({ iconClass, dropdownItems, t
             >
                 <i className={`${iconClass} w-full h-full text-dc flex items-center justify-center text-[27px] font-[500] absolute`}></i>
                 {dropdownItems.length > 0 && (
-                    <span className="bubble absolute w-[20px] h-[20px] rounded-[30%] text-[12px] font-bold flex items-center justify-center text-white bg-[red] right-[-5px] top-[-5px]">
+                    <span className="bubble absolute w-[20px] h-[20px] rounded-[30%] text-[12px] font-bold flex items-center justify-center text-white bg-red-500 right-[-5px] top-[-5px]">
                         {dropdownItems.length}
                     </span>
                 )}
             </div>
             {dropdownVisible && (
                 <div
-                    className="z-10 absolute top-[55px] right-[20px] w-[350px] bg-auth-form-color shadow-lg rounded-lg overflow-hidden"
+                    className="z-10 fixed top-[65px] right-[10px] w-[350px] bg-system-white shadow-lg rounded-lg overflow-hidden"
                     ref={dropdownRef}
                 >
-                    <div className="p-3 text-white font-semibold border-b border-gray-300 flex justify-between items-center">
+                    <div className="p-3 text-62 font-semibold border-b border-gray-300 flex justify-between items-center">
                         {title}
                         {newItemLabel && <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full">{dropdownItems.length} {newItemLabel}</span>}
                     </div>
@@ -77,19 +77,19 @@ const DropdownIcon: React.FC<DropdownIconProps> = ({ iconClass, dropdownItems, t
                                 {item.avatar ? (
                                     <img src={item.avatar} alt={item.title} className={`w-10 h-10 rounded-full ${grid ? 'mb-2' : ''}`} />
                                 ) : (
-                                    <div className={`w-10 h-10 flex items-center justify-center rounded-full bg-[#4d4d4d] text-[#dcdcdc] font-bold ${grid ? 'mb-2' : ''}`}>
+                                    <div className={`w-10 h-10 flex items-center justify-center rounded-full bg-dc text-62 font-bold ${grid ? 'mb-2' : ''}`}>
                                         {item.title[0].toUpperCase()}
                                     </div>
                                 )}
                                 <div className="flex-1">
-                                    <p className="font-medium text-gray-100">{item.title}</p>
-                                    <p className="text-sm text-gray-400">{item.description}</p>
-                                    <p className="text-xs text-gray-600">{item.time}</p>
+                                    <p className="font-medium text-gray-900">{item.title}</p>
+                                    <p className="text-sm text-gray-600">{item.description}</p>
+                                    <p className="text-xs text-gray-400">{item.time}</p>
                                 </div>
                             </li>
                         ))}
                     </ul>
-                    <button className="w-full text-center py-2 text-white font-medium hover:bg-gray-200">{viewAllLabel}</button>
+                    <button className="w-full text-center py-2 text-[rgba(23,217,215,1)] border-t border-gray-300 bg-white font-medium hover:bg-gray-200">{viewAllLabel}</button>
                 </div>
             )}
         </div>
