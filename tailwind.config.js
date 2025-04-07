@@ -7,8 +7,8 @@ module.exports = {
                 'company-color-primary': '#ee2526',
                 'company-color-secondary': '#166a37',
                 'auth-form-color': 'rgba(0, 0, 0, 0.487)',
-                '62':'#626262',
-                'dc':'#dcdcdc',
+                '62': '#626262',
+                'dc': '#dcdcdc',
                 'system-white': '#f9f9f9'
             },
             backgroundImage: {
@@ -16,7 +16,7 @@ module.exports = {
                 'custom-gradient2': 'linear-gradient(45deg, rgba(255, 255, 255, 0.15) 0%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent)',
                 'sidebar-gradient': 'linear-gradient(180deg, rgba(56,108,179,1) 0%, rgba(34,74,121,1) 16%, rgba(23,217,215,1) 100%)',
             },
-    
+
             backdropBlur: {
                 'custom': '40px',  // Adds a custom blur of 40px
             },
@@ -42,12 +42,35 @@ module.exports = {
                     '50%': { transform: 'scale(1.5) rotate(180deg)', opacity: 0.9 },
                     '100%': { transform: 'scale(1) rotate(360deg)', opacity: 0 }
                 },
+                bounceInDown: {
+                    '0%, 60%, 75%, 90%, to': {
+                        'animation-timing-function': 'cubic-bezier(0.215, 0.61, 0.355, 1)',
+                    },
+                    '0%': {
+                        opacity: '0',
+                        transform: 'translate3d(0, -3000px, 0) scaleY(3)',
+                    },
+                    '60%': {
+                        opacity: '1',
+                        transform: 'translate3d(0, 25px, 0) scaleY(0.9)',
+                    },
+                    '75%': {
+                        transform: 'translate3d(0, -10px, 0) scaleY(0.95)',
+                    },
+                    '90%': {
+                        transform: 'translate3d(0, 5px, 0) scaleY(0.985)',
+                    },
+                    'to': {
+                        transform: 'translateZ(0)',
+                    },
+                },
             },
 
             animation: {
                 bounceIn: 'bounceIn 0.4s ease-in',
                 jelloEffect: 'jelloEffect 1s ease-in-out',
-                rotascaling: 'rotascaling 2s linear infinite'
+                rotascaling: 'rotascaling 2s linear infinite',
+                bounceInDown: 'bounceInDown 0.5s ease-in-out'
             },
         },
     },

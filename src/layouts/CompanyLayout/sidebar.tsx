@@ -79,10 +79,11 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }: SidebarProps) {
     }, [sidebarOpen]);
 
     return (
-        <aside 
-            className={`sidebar fixed duration-150 flex shadow-[0_0_5px_rgba(0,0,0,0.5)] flex-col text-white h-full bg-sidebar-gradient
-                     ${sidebarOpen ? 'lg:w-0' : 'lg:w-[290px]'} 
-                    ${sidebarOpen ? 'w-[290px] z-50 lg:z-50' : 'w-0 z-50 lg:z-50'} `}>
+        <aside
+            className={`sidebar w-[290px] fixed duration-150 flex shadow-[0_0_5px_rgba(0,0,0,0.5)] flex-col text-white h-full bg-sidebar-gradient
+              ${sidebarOpen ? 'lg:translate-x-[-100%] translate-x-0 z-50 lg:z-50' : 'lg:translate-x-0 translate-x-[-290px] lg:z-0 z-50'}`}
+        >
+
             <div className="company-name flex pl-4 w-full h-[100px]">
                 <img src={companyName} alt="Company Logo" className="h-full w-[80%] object-contain" />
             </div>

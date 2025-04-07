@@ -23,6 +23,8 @@ import PasswordReset from "./pages/Auth/passwordReset";
 import RequestPasswordReset from "./pages/Auth/requestPasswordReset";
 import Auth from "./pages/Auth/Auth";
 
+import ModalPage from "./pages/companyPages/modalComponent";
+
 const App: React.FC = () => {
     return (
         <Router>
@@ -30,6 +32,7 @@ const App: React.FC = () => {
                 {/* Admin Routes */}
                 <Route path="/admin" element={<CompanyLayout />}>
                     <Route index element={<CompanyDashboard />} />
+                    <Route path="modal-components" element={<ModalPage />} />
                 </Route>
 
                 {/* User Routes */}

@@ -5,9 +5,9 @@
         "path": "/"
     },
     {
-        "title": "Loan Applications",
-        "icon": "bi-pencil",
-        "path": "/loanApplications"
+        "title": "Modal Component",
+        "icon": "bi-window",
+        "path": "modal-components"
     },
 
     {
