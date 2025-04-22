@@ -24,19 +24,38 @@ import RequestPasswordReset from "./pages/Auth/requestPasswordReset";
 import Auth from "./pages/Auth/Auth";
 
 import ModalPage from "./pages/companyPages/modalComponent";
+import StagesTemplate from "./pages/companyPages/stagesTemplate";
 
 const App: React.FC = () => {
     return (
         <Router>
             <Routes>
                 {/* Admin Routes */}
-                <Route path="/admin" element={<CompanyLayout />}>
+                <Route path="/" element={<CompanyLayout />}>
                     <Route index element={<CompanyDashboard />} />
-                    <Route path="modal-components" element={<ModalPage />} />
+
+                    {/* Atom Components */}
+                    <Route path='atom-components/'></Route>
+
+                    {/* Molecule Components */}
+                    <Route path='molecule-components/'></Route>
+
+                    {/* Organism Components */}
+                    <Route path='organism-components/'>
+                        <Route path="modals" element={<ModalPage />} />
+                    </Route>
+
+                    {/* Template Components */}
+                    <Route path='template-components/'>
+                        <Route path="tab-template" element={<StagesTemplate />} />
+                    </Route>
+
+                    {/* Pages */}
+                    <Route path='pages-components/'></Route>
                 </Route>
 
                 {/* User Routes */}
-                <Route path="/user" element={<ClientLayout />}>
+                <Route path="user-app/" element={<ClientLayout />}>
                     <Route index element={<UserDashboard />} />
                     <Route path="transactions" element={<Transactions />} />
                     <Route path="my-account" element={<MyAccount />} />

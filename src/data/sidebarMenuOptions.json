@@ -1,120 +1,54 @@
 [
     {
         "title": "Dashboard",
-        "icon": "bi-house-fill",
-        "path": "/"
+        "icon": "bi-speedometer2",
+        "path": "dashboard"
     },
     {
-        "title": "Modal Component",
-        "icon": "bi-window",
-        "path": "modal-components"
-    },
-
-    {
-        "title": "Back Office",
-        "icon": "bi-database-fill",
+        "title": "Atom Components",
+        "icon": "bi-circle-fill",
         "children": [
             {
-                "title": "Due Diligence",
-                "icon": "bi-caret-right-fill",
-                "path": "/dueDiligence"
-            },
-            {
-                "title": "Loan Log",
-                "icon": "bi-caret-right-fill",
-                "path": "/loanLog"
-            },
-            {
-                "title": "PMEC Submissions",
-                "icon": "bi-caret-right-fill",
-                "path": "/pmecSubmissions"
-            },
-            {
-                "title": "PMEC Submissions List",
-                "icon": "bi-caret-right-fill",
-                "path": "/pmecSubmissionsList"
-            },
-            {
-                "title": "Ledger",
-                "icon": "bi-caret-right-fill",
-                "path": "/ledger"
-            },
-            {
-                "title": "GRZ Instructions",
-                "icon": "bi-caret-right-fill",
-                "path": "/grzInstructions"
+                "title": "Buttons",
+                "icon": "bi-toggle-on",
+                "path": "buttons"
             }
         ]
     },
     {
-        "title": "Loans",
-        "icon": "bi-currency-exchange",
+        "title": "Molecule Components",
+        "icon": "bi-box",
+        "children": [
+            
+        ]
+    },
+    {
+        "title": "Organism Components",
+        "icon": "bi-diagram-3",
         "children": [
             {
-                "title": "Active Loans",
-                "icon": "bi-caret-right-fill",
-                "path": "/activeLoans"
-            },
-            {
-                "title": "Closed Loans",
-                "icon": "bi-caret-right-fill",
-                "path": "/closedLoans"
+                "title": "Modal Component",
+                "icon": "bi-layout-text-window-reverse",
+                "path": "organism-components/modals"
             }
         ]
     },
     {
-        "title": "Disbursements",
-        "icon": "bi-person-fill",
+        "title": "Template Components",
+        "icon": "bi-file-earmark-code",
         "children": [
             {
-                "title": "Bank Instructions",
-                "icon": "bi-caret-right-fill",
-                "path": "/bankInstructions"
-            },
-            {
-                "title": "Momo Instructions",
-                "icon": "bi-caret-right-fill",
-                "path": "/momoInstructions"
+                "title": "tab-template",
+                "icon": "bi-layout-text-sidebar",
+                "path": "template-components/tab-template"
             }
         ]
     },
     {
-        "title": "Payment Form",
-        "icon": "bi-cash-coin",
-        "path": "/paymentForm"
-    },
-    {
-        "title": "Loan Calculator",
-        "icon": " bi-calculator-fill",
-        "path": "/loanCalculator"
-    },
-    {
-        "title": "Super Admin",
-        "icon": " bi-shield-lock",
+        "title": "Page Components",
+        "icon": "bx bxl-html5",
         "children": [
-            {
-                "title": "user Management",
-                "icon": "bi-person-fill-gear",
-                "children": [
-                    {
-                        "title": "Session Management",
-                        "icon": "bi-caret-right-fill",
-                        "path": "/sessionManagement"
-                    }
-                    ,
-                    {
-                        "title": "Role Management",
-                        "icon": "bi-caret-right-fill",
-                        "path": "/roleManagement"
-                    }
-                ]
-            },
-            {
-                "title": "Department Management",
-                "icon": "bi-caret-right-fill",
-                "path": "/dapartmentManagement"
-            }
+            
         ]
     }
 ]
-
