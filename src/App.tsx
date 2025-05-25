@@ -30,8 +30,15 @@ const App: React.FC = () => {
     return (
         <Router>
             <Routes>
-                {/* Admin Routes */}
-                <Route path="/" element={<CompanyLayout />}>
+                 {/* ==========1. USER-APP PAGES========= */}
+                <Route path="user-app/" element={<ClientLayout />}>
+                    <Route index element={<UserDashboard />} />
+                    <Route path="transactions" element={<Transactions />} />
+                    <Route path="my-account" element={<MyAccount />} />
+                </Route>
+
+                 {/* =========2. DASHBOARD-APP PAGES========= */}
+                <Route path="dashboard-app/" element={<CompanyLayout />}>
                     <Route index element={<CompanyDashboard />} />
 
                     {/* Atom Components */}
@@ -54,14 +61,7 @@ const App: React.FC = () => {
                     <Route path='pages-components/'></Route>
                 </Route>
 
-                {/* User Routes */}
-                <Route path="user-app/" element={<ClientLayout />}>
-                    <Route index element={<UserDashboard />} />
-                    <Route path="transactions" element={<Transactions />} />
-                    <Route path="my-account" element={<MyAccount />} />
-                </Route>
-
-                {/* Authentication Routes */}
+                {/* =========3. AUTH-PAGES========= */}
                 <Route path="/auth" element={<Auth />}>
                     <Route path="register" element={<Register />} />
                     <Route path="login" element={<Login />} />
@@ -70,8 +70,11 @@ const App: React.FC = () => {
                     <Route path="request-password-reset" element={<RequestPasswordReset />} />
                 </Route>
 
-                {/* 404 Page */}
+                {/* =========4. WILDCARD-PAGES========= */}
                 <Route path="*" element={<FourZeroFour />} />
+
+                {/* =========5. WEBSITE and LANDING PAGES-========= */}
+                {/* Define routes for your landing pages here */}
             </Routes>
         </Router>
     );

@@ -19,7 +19,7 @@ const Loader: React.FC<LoaderProps> = ({
     bgColor = "bg-transparent",
     additionalClasses = "",
     preloaderText = "Loading...",
-    ptagstyles = "text-center text-[18px] text-frontier-light-blue",
+    ptagstyles = "text-center text-[18px] text-company-color-primary",
 }) => {
     return (
         <div className={`flex flex-col w-full items-center justify-center h-full ${bgColor} ${additionalClasses}`}>

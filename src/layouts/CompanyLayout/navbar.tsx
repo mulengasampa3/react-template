@@ -116,7 +116,7 @@ const Navbar: React.FC<NavbarProps> = ({ setSidebarOpen, sidebarOpen }) => {
         <div className="w-[100%] h-[55px]  flex justify-between items-center pl-2 border pr-2">
             <div
                 onClick={() => setSidebarOpen(!sidebarOpen)}
-                className="minimize-btn mx-[5px] w-[40px] h-[40px] bg-system-white bg-frontier-light-blue rounded-xl hover:rounded-[50%] transition-all"
+                className="minimize-btn mx-[5px] w-[40px] h-[40px] bg-system-white bg-company-color-primary rounded-xl hover:rounded-[50%] transition-all"
             >
                 <i className="bx bx-menu w-full h-full text-dc text-[27px] flex items-center justify-center font-[500] cursor-pointer"></i>
             </div>

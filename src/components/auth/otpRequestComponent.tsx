@@ -60,7 +60,7 @@ const OtpRequestForm: React.FC<OtpRequestFormProps> = ({
                         type="button"
                         onClick={() => setSelectedOption(method)}
                         className={`w-40 py-2 rounded-md transition duration-200 ${
-                            selectedOption === method ? "bg-frontier-light-blue text-white" : "bg-[#626262] text-white"
+                            selectedOption === method ? "bg-company-color-primary text-white" : "bg-[#626262] text-white"
                         }`}
                     >
                         {method === "phone" ? "Send by Phone" : "Send by Email"}
@@ -87,7 +87,7 @@ const OtpRequestForm: React.FC<OtpRequestFormProps> = ({
                         type="text"
                         id="phoneNumber"
                         placeholder="+260..."
-                        className="mt-1 block w-full p-2 border border-white pl-4 h-[50px] rounded-[30px] bg-transparent text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-frontier-light-blue"
+                        className="mt-1 block w-full p-2 border border-white pl-4 h-[50px] rounded-[30px] bg-transparent text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-company-color-primary"
                         required
                         defaultValue="+260"
                         onInput={handlePhoneInput}
@@ -104,7 +104,7 @@ const OtpRequestForm: React.FC<OtpRequestFormProps> = ({
                         type="email"
                         id="email"
                         placeholder="Enter your email..."
-                        className="mt-1 block w-full p-2 border border-white pl-4 h-[50px] rounded-[30px] bg-transparent text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-frontier-light-blue"
+                        className="mt-1 block w-full p-2 border border-white pl-4 h-[50px] rounded-[30px] bg-transparent text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-company-color-primary"
                         required
                         value={inputValue}
                         onChange={(e) => setInputValue(e.target.value)}
@@ -116,7 +116,7 @@ const OtpRequestForm: React.FC<OtpRequestFormProps> = ({
             <div className="w-full flex flex-col items-center justify-center">
                 <button
                     type="submit"
-                    className="w-40 bg-frontier-light-blue hover:bg-[#626262] text-[#fff] py-2 rounded-md transition duration-200"
+                    className="w-40 bg-company-color-primary hover:bg-[#626262] text-[#fff] py-2 rounded-md transition duration-200"
                     disabled={loading}
                 >
                     Send OTP

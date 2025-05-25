@@ -65,7 +65,7 @@ const Tabs: React.FC = () => {
                             onClick={() => setActiveTab(index)}
                             className={`min-w-[100px] sm:text-[14px] text-[12px] rounded ${
                                 activeTab === index
-                                    ? 'bg-frontier-light-blue text-white'
+                                    ? 'bg-company-color-primary text-white'
                                     : 'bg-gray-200 hover:bg-gray-300'
                             }`}
                         >
@@ -78,10 +78,10 @@ const Tabs: React.FC = () => {
                         <input
                             type="text"
                             placeholder="Filter..."
-                            className="block w-[200px] h-[40px] p-2 bg-grey-form-input text-form-text border-none pl-4 rounded-[30px]  placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-frontier-light-blue"
+                            className="block w-[200px] h-[40px] p-2 bg-grey-form-input text-form-text border-none pl-4 rounded-[30px]  placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-company-color-primary"
                         />
                         <button
-                            className="absolute w-[37px] h-[37px] flex items-center bg-transparent border-none justify-center right-[1%] top-[9.5px] rounded-full text-frontier-dark-blue hover:text-frontier-light-blue transition-all duration-100 ease-linear hover:bg-gray-300 focus:outline-none"
+                            className="absolute w-[37px] h-[37px] flex items-center bg-transparent border-none justify-center right-[1%] top-[9.5px] rounded-full text-frontier-dark-blue hover:text-company-color-primary transition-all duration-100 ease-linear hover:bg-gray-300 focus:outline-none"
                         >
                             <i className='bx bx-search-alt text-[25px] text'></i>
                         </button>
@@ -94,7 +94,7 @@ const Tabs: React.FC = () => {
                 <div className="button-container flex flex-col justify-center">
                     <button
                         onClick={() => handleTabChange('left')}
-                        className="w-[50px] h-full sm:flex hidden items-center justify-center bg-gray-200 text-frontier-light-blue hover:text-frontier-dark-blue transition-all duration-100 ease-linear focus:outline-none"
+                        className="w-[50px] h-full sm:flex hidden items-center justify-center bg-gray-200 text-company-color-primary hover:text-frontier-dark-blue transition-all duration-100 ease-linear focus:outline-none"
                     >
                         <i className='bi bi-chevron-compact-left text-[70px] text' ></i>
                     </button>
@@ -106,7 +106,7 @@ const Tabs: React.FC = () => {
                     onTouchMove={(e) => setTouchEnd(e.touches[0].clientX)}
                     onTouchEnd={handleTouchEnd}
                 >
-                    <header className="record-navigation h-[60px] w-full bg-frontier-light-blue">
+                    <header className="record-navigation h-[60px] w-full bg-company-color-primary">
 
                     </header>
                     
@@ -118,7 +118,7 @@ const Tabs: React.FC = () => {
                         onClick={() => handleTabChange('right')}
                         className="w-[50px] h-full sm:flex hidden items-center justify-center bg-gray-200 hover:text-frontier-dark-blue transition-all duration-100 ease-linear hover:bg-gray-300 focus:outline-none"
                     >
-                        <i className='bi bi-chevron-compact-right text-[70px] text-frontier-light-blue' ></i>
+                        <i className='bi bi-chevron-compact-right text-[70px] text-company-color-primary' ></i>
                     </button>
                 </div>
             </div>

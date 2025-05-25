@@ -18,7 +18,7 @@ const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
     description,
     confirmLabel,
     iconName = "bi-exclamation-circle", // Default icon
-    iconColor = "text-frontier-light-blue", // Default color
+    iconColor = "text-company-color-primary", // Default color
     buttonColor = "bg-red-500",
     onConfirm,
     onCancel,
@@ -50,7 +50,7 @@ const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
             <div className="modal-dialog bg-white flex flex-col items-center justify-center sm:animate-bounceIn animate-none rounded-lg shadow-lg pt-5 pr-4 pb-7 pl-4 w-full sm:max-w-[450px] sm:h-auto h-screen">
                 {/* Modal Header */}
                 <div className="modal-header">
-                    <h3 className="modal-title text-[30px] font-[600] text-frontier-light-blue">{title}</h3>
+                    <h3 className="modal-title text-[30px] font-[600] text-company-color-primary">{title}</h3>
                 </div>
 
                 {/* Modal Body */}

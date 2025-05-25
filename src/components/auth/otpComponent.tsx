@@ -77,21 +77,21 @@ const OTPPage: React.FC<OTPPageProps> = ({
                             ref={(el) => (inputRefs.current[index] = el)}
                             onChange={(e) => handleInputChange(index, e.target.value)}
                             onKeyDown={(e) => e.key === "Backspace" && handleBackspace(index)}
-                            className="w-[40px] h-[40px] sm:w-[55px] sm:h-[55px] text-center text-white bg-transparent border border-white rounded-[30px] focus:outline-none focus:ring-2 focus:ring-frontier-light-blue text-xl"
+                            className="w-[40px] h-[40px] sm:w-[55px] sm:h-[55px] text-center text-white bg-transparent border border-white rounded-[30px] focus:outline-none focus:ring-2 focus:ring-company-color-primary text-xl"
                         />
                     ))}
                 </div>
 
                 <button
                     type="submit"
-                    className="mt-6 w-40 bg-frontier-light-blue hover:bg-[#626262] text-white py-2 rounded-md transition duration-200"
+                    className="mt-6 w-40 bg-company-color-primary hover:bg-[#626262] text-white py-2 rounded-md transition duration-200"
                 >
                     Verify OTP
                 </button>
 
                 <Link
                     to={backLink}
-                    className="block text-center text-sm text-white mt-4 hover:text-frontier-light-blue transition duration-200"
+                    className="block text-center text-sm text-white mt-4 hover:text-company-color-primary transition duration-200"
                 >
                     {backLinkText}
                 </Link>

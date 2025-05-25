@@ -18,7 +18,7 @@ const ErrorMessage: React.FC<LoaderProps> = ({
     bgColor = "bg-transparent",
     additionalClasses = "",
     errorText = "An error occured...",
-    ptagstyles = "text-center text-[18px] text-frontier-light-blue",
+    ptagstyles = "text-center text-[18px] text-company-color-primary",
     iconStyles = "text-red-500 text-[40px]",
 }) => {
     return (

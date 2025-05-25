@@ -35,7 +35,7 @@ const OTPPage: React.FC = () => {
                     <img src={CompanyLogo} alt="Company Logo" className="h-full w-full object-contain" />
                 </div>
                 <h2 className="text-center text-white text-[1rem] font-medium mb-6">
-                    Enter your <span className='text-frontier-light-blue'>One Time Password (OTP)</span>
+                    Enter your <span className='text-company-color-primary'>One Time Password (OTP)</span>
                 </h2>
                 <div className="flex justify-center space-x-2">
                     {otpValues.map((value, index) => (
@@ -47,18 +47,18 @@ const OTPPage: React.FC = () => {
                             ref={(el) => (inputRefs.current[index] = el)}
                             onChange={(e) => handleInputChange(index, e.target.value)}
                             onKeyDown={(e) => e.key === "Backspace" && handleBackspace(index)}
-                            className="w-[40px] h-[40px] sm:w-[55px] sm:h-[55px] text-center text-white bg-transparent border border-white rounded-[30px] focus:outline-none focus:ring-2 focus:ring-frontier-light-blue text-xl"
+                            className="w-[40px] h-[40px] sm:w-[55px] sm:h-[55px] text-center text-white bg-transparent border border-white rounded-[30px] focus:outline-none focus:ring-2 focus:ring-company-color-primary text-xl"
                         />
                     ))}
                 </div>
 
-                <button type="submit" className="mt-6 w-40 bg-frontier-light-blue hover:bg-[#626262] text-white py-2 rounded-md transition duration-200">
+                <button type="submit" className="mt-6 w-40 bg-company-color-primary hover:bg-[#626262] text-white py-2 rounded-md transition duration-200">
                     Verify OTP
                 </button>
                 
                 <Link
                     to="/clientAuth"
-                    className="block text-center text-sm text-white mt-4 hover:text-frontier-light-blue transition duration-200"
+                    className="block text-center text-sm text-white mt-4 hover:text-company-color-primary transition duration-200"
                 >
                     Back to Login
                 </Link>
