@@ -7,12 +7,12 @@ interface Tab {
 
 const Tabs: React.FC = () => {
     const tabs: Tab[] = [
-        { label: 'New Loan', content: 'New Loan' },
-        { label: 'Documentation', content: 'Documentation' },
-        { label: 'Due Diligence', content: 'Due Diligence' },
-        { label: 'Approved', content: 'Approved' },
-        { label: 'Payment', content: 'Payment' },
-        { label: 'Disqualified', content: 'Disqualified' },
+        { label: 'page one', content: '1' },
+        { label: 'page two', content: '2' },
+        { label: 'page three', content: '3' },
+        { label: 'page four', content: '4' },
+        { label: 'page five', content: '5' },
+        { label: 'page six', content: '6' },
     ];
 
     const [activeTab, setActiveTab] = useState(0);
