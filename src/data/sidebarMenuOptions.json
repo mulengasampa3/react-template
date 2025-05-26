@@ -48,7 +48,27 @@
         "title": "Page Components",
         "icon": "bx bxl-html5",
         "children": [
-            
+            {
+                "title": "Auth Pages",
+                "icon": "bi-house",
+                "path": "../auth/"
+            },
+            {
+                "title": "User App Pages",  
+                "icon": "bi-info-circle",
+                "path": "../user-app/"
+            },
+            {
+                "title": "WildCard Pages",
+                "icon": "bi-info-circle",
+                "path": "../*"
+            },
+            {
+                "title": "Landing Pages",
+                "icon": "bi-info-circle",
+                "path": ""
+            }
+
         ]
     }
 ]

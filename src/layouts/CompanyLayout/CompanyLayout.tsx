@@ -24,7 +24,8 @@ const Layout: React.FC = () => {
             ></div>
 
             {/* Main Content */}
-            <main className={`main-content fixed right-0 duration-150 h-full overflow-auto transition-all z-10 ${sidebarOpen ? 'w-full ' : 'w-[calc(100%-290px)]'} ${sidebarOpen ? 'lg:w-full lg: z-10' : 'lg:w-[calc(100%-290px)] w-dvw'} `}>
+            <main className={`main-content fixed right-0 duration-150 h-full overflow-auto transition-all z-10 
+                ${sidebarOpen ? 'w-full lg:w-full lg: z-10' : 'lg:w-[calc(100%-290px)] w-dvw'}`}>
                 <Navbar setSidebarOpen={setSidebarOpen} sidebarOpen={sidebarOpen} />
                 <div className="content relative w-full py-[0.5px] h-[calc(100%-55px)]">
                     <Outlet />

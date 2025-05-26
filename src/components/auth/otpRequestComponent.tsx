@@ -81,7 +81,7 @@ const OtpRequestForm: React.FC<OtpRequestFormProps> = ({
             {selectedOption === "phone" && !loading && (
                 <div>
                     <label className="block text-sm font-medium text-white" htmlFor="phoneNumber">
-                        Phone Number:
+                        Phone Numbers:
                     </label>
                     <input
                         type="text"

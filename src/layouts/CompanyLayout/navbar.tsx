@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import DemoLogo from '../../assets/images/icons/logo-white.png'
 
 interface NavbarProps {
     setSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -113,10 +114,10 @@ const Navbar: React.FC<NavbarProps> = ({ setSidebarOpen, sidebarOpen }) => {
     ];
 
     return (
-        <div className="w-[100%] h-[55px]  flex justify-between items-center pl-2 border pr-2">
+        <div className="w-[100%] h-[55px]  flex justify-between items-center pl-2 pr-2">
             <div
                 onClick={() => setSidebarOpen(!sidebarOpen)}
-                className="minimize-btn mx-[5px] w-[40px] h-[40px] bg-system-white bg-company-color-primary rounded-xl hover:rounded-[50%] transition-all"
+                className="minimize-btn mx-[5px] w-[40px] h-[40px] bg-white rounded-xl hover:rounded-[50%] transition-all"
             >
                 <i className="bx bx-menu w-full h-full text-dc text-[27px] flex items-center justify-center font-[500] cursor-pointer"></i>
             </div>
@@ -125,13 +126,13 @@ const Navbar: React.FC<NavbarProps> = ({ setSidebarOpen, sidebarOpen }) => {
                 <DropdownIcon iconClass="bx bxs-chat" dropdownItems={chats} type="chat" />
                 <div className="user-profile flex items-center mx-1 justify-center">
                     <img
-                        src="https://randomuser.me/api/portraits/men/1.jpg"
+                        src={DemoLogo}
                         alt="User"
                         className="w-[40px] h-[40px] rounded-xl hover:rounded-[50%] transition-all cursor-pointer"
                     />
                     <div className="user-name sm:flex hidden flex-col justify-center mx-1  px-1">
-                        <span className="user-name text-62 font-bold text-md leading-3">Thandiwe Lengalenga</span>
-                        <span className="role text-[12px] font-light text-62">Credit Officer</span>
+                        <span className="user-name text-62 font-bold text-md leading-3">Marsai Martin</span>
+                        <span className="role text-[12px] font-light text-62">Crush</span>
                     </div>
                 </div>
             </div>

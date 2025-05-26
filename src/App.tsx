@@ -62,12 +62,13 @@ const App: React.FC = () => {
                 </Route>
 
                 {/* =========3. AUTH-PAGES========= */}
-                <Route path="/auth" element={<Auth />}>
+                <Route path="auth/">
                     <Route path="register" element={<Register />} />
-                    <Route path="login" element={<Login />} />
+                    <Route index path="login" element={<Login />} />
                     <Route path="otp" element={<Otp />} />
                     <Route path="password-reset" element={<PasswordReset />} />
                     <Route path="request-password-reset" element={<RequestPasswordReset />} />
+                    <Route path="request-password-reset" element={<Auth />} />
                 </Route>
 
                 {/* =========4. WILDCARD-PAGES========= */}
