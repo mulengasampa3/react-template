@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useState } from "react";
-import CompanyLogo from "../../assets/images/icons/logo-white.png"; // Adjust the path as needed
+import CompanyLogo from "../../../assets/images/icons/logo-white.png"; // Adjust the path as needed
 
 interface OtpRequestFormProps {
     onSubmit: (data: { method: string; value: string }) => void;  // Callback when form is submitted

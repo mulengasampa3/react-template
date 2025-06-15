@@ -1,4 +1,5 @@
 import Breadcrumb from "../../components/molecules/breadcrumb";
+import RedditTreeComponent from "../../components/organisms/redditLikeTree";
 
 export default function Dashboard() {
     return (
@@ -13,7 +14,7 @@ export default function Dashboard() {
                         {/* Breadcrumbs / Page Title */}
                         <Breadcrumb items={[
                             { label: "Home", path: "/" },
-                            { label: "Dashboard" }
+                            { label: "Reddit Tree" }
                         ]} />
                     </div>
                 </div>
@@ -21,7 +22,7 @@ export default function Dashboard() {
 
             {/* Main Content Area */}
             <div className="wrapper border w-full h-[calc(100%_-_60px)] gap-x-2 flex flex-col md:flex-row items-center md:items-start p-1">
-                
+                <RedditTreeComponent />
             </div>
         </div>
 

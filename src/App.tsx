@@ -25,6 +25,7 @@ import Auth from "./pages/Auth/Auth";
 
 import ModalPage from "./pages/companyPages/modalComponent";
 import StagesTemplate from "./pages/companyPages/stagesTemplate";
+import RedditLikeTree from "./pages/companyPages/TreeComponent";
 
 const App: React.FC = () => {
     return (
@@ -32,7 +33,7 @@ const App: React.FC = () => {
             <Routes>
                  {/* ==========1. USER-APP PAGES========= */}
                 <Route path="user-app/" element={<ClientLayout />}>
-                    <Route index element={<UserDashboard />} />
+                    <Route index element={<UserDashboard />} path="home"/>
                     <Route path="transactions" element={<Transactions />} />
                     <Route path="my-account" element={<MyAccount />} />
                 </Route>
@@ -50,6 +51,7 @@ const App: React.FC = () => {
                     {/* Organism Components */}
                     <Route path='organism-components/'>
                         <Route path="modals" element={<ModalPage />} />
+                        <Route path="tree-component" element={<RedditLikeTree/>} />
                     </Route>
 
                     {/* Template Components */}
@@ -62,7 +64,7 @@ const App: React.FC = () => {
                 </Route>
 
                 {/* =========3. AUTH-PAGES========= */}
-                <Route path="auth/">
+                <Route path="auth/">    
                     <Route path="register" element={<Register />} />
                     <Route index path="login" element={<Login />} />
                     <Route path="otp" element={<Otp />} />

@@ -30,6 +30,11 @@
                 "title": "Modal Component",
                 "icon": "bi-layout-text-window-reverse",
                 "path": "organism-components/modals"
+            },
+            {
+                "title": "Tree Component",
+                "icon": "bi-table",
+                "path": "organism-components/tree-component"
             }
         ]
     },

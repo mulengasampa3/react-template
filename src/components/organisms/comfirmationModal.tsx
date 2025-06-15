@@ -46,17 +46,17 @@ const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
     if (!isOpen) return null;
 
     return (
-        <div className="modal fixed inset-0 flex items-center justify-center z-[10000] bg-black bg-opacity-50">
-            <div className="modal-dialog bg-white flex flex-col items-center justify-center sm:animate-bounceIn animate-none rounded-lg shadow-lg pt-5 pr-4 pb-7 pl-4 w-full sm:max-w-[450px] sm:h-auto h-screen">
+        <div className="modal fixed inset-0 flex items-center justify-center z-[10000] backdrop-blur-md bg-black bg-opacity-40">
+            <div className="modal-dialog border  bg-white flex flex-col items-center justify-center sm:animate-bounceIn animate-none rounded-lg shadow-lg py-4 pr-4 pl-4 w-full sm:max-w-[500px] sm:h-auto h-screen">
                 {/* Modal Header */}
-                <div className="modal-header">
-                    <h3 className="modal-title text-[30px] font-[600] text-company-color-primary">{title}</h3>
+                <div className="modal-header leading-3 w-full flex item-center justify-center">
+                    <i className={`${iconName} text-[5.25rem] ${iconColor}`}></i>
                 </div>
 
                 {/* Modal Body */}
-                <div className="modal-body flex flex-col items-center">
-                    <i className={`${iconName} text-[5.25rem] ${iconColor}`}></i>
-                    <p className="mb-4 text-center">{description}</p>
+                <div className="modal-body max-w-[400px] flex flex-col items-center">
+                    <h3 className={`modal-title text-[30px] text-center font-[600] ${iconColor}`}>{title}</h3>
+                    <p className="mb-4 text-center text-[15px]">{description}</p>
                 </div>
 
                 {/* Modal Footer */}

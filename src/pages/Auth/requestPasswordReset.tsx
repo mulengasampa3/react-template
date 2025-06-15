@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { resetUserPassword } from "../../features/auth/authSlice";
-import OtpRequestForm from "../../components/auth/otpRequestComponent";
+import OtpRequestForm from "../../components/organisms/auth/otpRequestComponent";
 import { AppDispatch } from "../../app/store";
 import { useDispatch } from "react-redux";
 

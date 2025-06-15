@@ -1,17 +1,17 @@
 [
     {
-        "title": "My Account",
+        "title": "Home",
+        "icon": "bi-person-fill-gear",
+        "path": "home"
+    },
+    {
+        "title": "Option 2",
         "icon": " bi-wallet2",
-        "path": "/my-account"
+        "path": "my-account"
     },
     {
         "title": "Transactions",
         "icon": "bi-arrow-left-right",
-        "path": "/transactions"
-    },
-    {
-        "title": "Settings",
-        "icon": "bi-person-fill-gear",
-        "path": "/userDashboard"
+        "path": "transactions"
     }
 ]

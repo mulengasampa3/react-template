@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Breadcrumb from "../../components/uiComponents/breadcrumb";
-import Modal from "../../components/uiComponents/modal"; // Import the Modal component
+import Breadcrumb from "../../components/molecules/breadcrumb";
+import Modal from "../../components/organisms/modal"; // Import the Modal component
 
 export default function ModalDemo() {
     const [modalOpen, setModalOpen] = useState(false);
